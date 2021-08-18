@@ -1,0 +1,92 @@
+/* Diseño del recuadro */
+.recuadro{
+  width: 700px;
+  height: 620px;
+  background: #dcf74a;
+  color: #6e4330;
+  font-family: Arial Black;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;	
+}
+
+/* Diseño del contenedor de los controles */
+.cuadro{
+  width: 450px;
+  height: 400px;
+  background: #92bdf0;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 50px 30px;
+  -webkit-box-shadow: 12px 12px 14px 3px rgba(0,0,0,0.6);
+  -moz-box-shadow: 12px 12px 14px 3px rgba(0,0,0,0.6);
+  box-shadow: 12px 12px 14px 3px rgba(0,0,0,0.6);
+
+}
+
+/* Diseño del titulo */
+.recuadro h1 {
+  color: white;
+  margin: 30px;
+  font-size: 50px;
+  font-family: Arial Black;
+}
+
+/* A todos los controles dentro del recuadro se les da diseño */
+.recuadro select, input {  
+  background-color: transparent;    
+  outline: none;
+  outline-style: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: solid black 1px;
+  color:#6e4330;
+  padding: 3px 10px;
+  width: 50%;
+}
+
+select, option {
+  font-family: Arial;
+  color: black;
+}
+
+#importe1{
+  top: 55px;
+  left: 85px;
+  position: absolute;
+}
+#das{
+  top: 100px;
+  left: 140px;
+  position: absolute;
+}
+#a1{
+  top: 145px;
+  left: 152px;
+  position: absolute;
+}
+#cantidad1{
+   top: 185px;
+  left: 75px;
+  position: absolute;
+}
+
+/* Se cambia la fuente del boton por Arial */
+.btn{
+    top: 255px;
+    left: 175px;
+    position: absolute;
+    background-color: #20d547;
+    color: white;
+    font-family: Arial Black;    
+    -webkit-box-shadow: 12px 12px 14px 3px rgba(0,0,0,0.6);
+    -moz-box-shadow: 12px 12px 14px 3px rgba(0,0,0,0.6);
+    box-shadow: 12px 12px 14px 3px rgba(0,0,0,0.6);
+}
+

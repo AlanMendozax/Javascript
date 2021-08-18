@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title> Factorial </title>
+	<script type="text/javascript" src="JS/JSEjercicio2.js"></script>
+</head>
+<body>
+
+	<!-- Form con evento ONSUBMIT el cual permite pasar un input a una variable JS  || return permite que se detenga y muestre los datos -->
+	<form onsubmit="JSEjercicio2: factorial();return(false);">
+		<!-- Input - Ingresar número -->
+		<input type="number" id="Numb">
+		<!-- Input/button - enviar / calcular -->
+		<input type="submit" name="Submit" value="CALCULAR" style="background-color: yellow; color: black; font-family: consolas;">
+	<br>
+
+		<!-- Div mostrar resultado-->
+		<div id="Resultado">
+			<input type="number" id="resultado">
+		</div>
+	</form>
+</body>
+</html>
+
+<!-- Fuentes de apoyo -->
+<!--https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_onsubmit_dom -->

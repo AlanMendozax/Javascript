@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> Exámen </title>
+
+	<!-- Referencia a archivo Javascript -->
+	<script type="text/javascript"  src="JS/JSExamen.js"></script>
+
+    <!-- Referencia a archivo CSS -->
+	<link rel="stylesheet" href="CSS/Examen.css">
+
+    <!-- Anexo de bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/Estilo9.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</head>
+<body>
+
+	<!-- Contenedor que sirve de recuadro para el programa -->	
+	<div class="recuadro">
+		<h1 align="center">DIVISAS</h1>
+	    <br><br><br><br>
+
+	    <!-- Contenedor en el cual se encontraran todos los controles -->
+		<div class="cuadro">
+
+			<!-- Valor a convertir-->
+			<p id="importe1"> IMPORTE: <input type="number" id="importe"/></p>
+
+            <!--"Select" nos permitira hacer la seleccion de las siguentes opciones que estan escritas a continuación, seleccionando la moneda que se quiere convertir-->
+			<p id="das"> DE: <select name="Moneda" id="de"></p>
+				<option value="" disabled selected> - - $ - - </option>				
+				<option value="Dolar">Dolar</option>
+				<option value="Euros">Euros</option>
+				<option value="LibraE">Libra Egipcia</option>
+				<option value="Chileno">Peso Chileno</option>
+				<option value="Pesos">Peso Mexicano</option>
+				<option value="Soles">Soles Peruanos</option>
+				<option value="YenJapones">Yen Japones</option>
+			</select> 
+			<br>			
+
+			<!--"Select" nos permitira hacer la seleccion de las siguentes opciones que estan escritas a continuación, seleccionando la moneda a la que se quiere hacer la conversion-->
+			<p id="a1">	A: <select name="Moneda2" id="a"></p>
+				<option value="" disabled selected> - - $ - - </option>				
+				<option value="Dolar">Dolar</option>
+				<option value="Euros">Euros</option>
+				<option value="LibraE">Libra Egipcia</option>
+				<option value="Chileno">Peso Chileno</option>
+				<option value="Pesos">Peso Mexicano</option>
+				<option value="Soles">Soles Peruanos</option>
+				<option value="YenJapones">Yen Japones</option>
+			</select>
+			<br>		
+
+			<!--Se mostrara la cantidad convertida-->
+			<p id="cantidad1">CANTIDAD: <input type="number" id="cantidad"></p><br><br><br>
+
+	<!--Este boton es el que hara toda la operacion para la converción-->
+	<button type="button" id="enviar" class="btn btn-lg"> LISTO </button><br> 
+	</div>
+	</div>	
+</body>
+</html>
+
+<!-- Fuentes de apoyo -->
+<!-- https://es.stackoverflow.com/questions/176638/conversor-de-moneda-html --> 
+<!-- https://developer.mozilla.org/es/docs/Learn/JavaScript/Building_blocks/conditionals -->
+<!-- https://getbootstrap.com/docs/4.0/components/buttons -->
